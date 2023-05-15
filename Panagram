@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    char a[100];    //Array to store the sentence
+    int c[26]={0},i;    //counter array and tarversal variable
+    printf("Enter the sentence\n");
+        scanf("%[^\n]s",a);
+    for(i=0;a[i];i++)                       //traversing the string
+        {
+            if(a[i]>=65 && i[a]<90)     //checking for uppercase letters
+                c[a[i]-'A']++;          //increment counter of letters present
+            else if(a[i]>=97 && a[i]<122)   //checking for lowercase letters
+                c[a[i]-'a']++;              //increment counter of letters present
+        }
+    for(i=0;i<26;i++)       //traversing counter array
+    {                  
+        if(a[i]==0)         //condition to check if any alphabet is not prsent
+            break;
+    }
+    i==26?printf("Panagram\n"):printf("Not a Panagram\n"); //if all 25 letters are present,it is a PANAGRAM
+   
+    return 0;
+}
